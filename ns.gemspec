@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "ns"
   gem.require_paths = ["lib"]
   gem.version       = Ns::VERSION
+
+  gem.add_dependency("xml-simple")
 end

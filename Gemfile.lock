@@ -2,13 +2,16 @@ PATH
   remote: .
   specs:
     ns (0.0.1)
+      xml-simple
 
 GEM
   remote: https://rubygems.org/
   specs:
+    xml-simple (1.1.1)
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   ns!
