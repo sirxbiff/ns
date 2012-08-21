@@ -1,3 +1,5 @@
+require "xmlsimple"
+
 module Ns
   class Client
 
@@ -58,7 +60,8 @@ module Ns
     end
 
     def get_stations
-      get_response('/ns-api-stations')
+      answer = get_response('/ns-api-stations')
+      p answer["Station"]
     end
 
     def get_maintenances(station, actual, unplanned)
@@ -87,7 +90,7 @@ module Ns
       request = Net::HTTP::Get.new(path)
       request.basic_auth(@api_key, @api_password)
       response = @client.request(request)
-      response.body
+      XmlSimple.xml_in(response.body, {'ForceArray' => false})
     end
   end
 end

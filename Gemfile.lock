@@ -7,6 +7,10 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    metaclass (0.0.1)
+    mocha (0.12.3)
+      metaclass (~> 0.0.1)
+    test-unit (2.4.8)
     xml-simple (1.1.1)
 
 PLATFORMS
@@ -14,4 +18,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  mocha
   ns!
+  test-unit

@@ -16,4 +16,6 @@ Gem::Specification.new do |gem|
   gem.version       = Ns::VERSION
 
   gem.add_dependency("xml-simple")
+  gem.add_development_dependency("mocha")
+  gem.add_development_dependency("test-unit")
 end
