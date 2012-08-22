@@ -33,7 +33,7 @@ module Ns
       get_response(url)
     end
 
-    def get_travel_advice(from, to, opts = {}, &block)
+    def get_travel_advice(from, to, opts = {})
       options = {
         through: '',
         previous_advices: 5,
