@@ -55,13 +55,13 @@ module Ns
       url << "&hslAllowed=#{options[:hsl]}"
       url << "&yearCard=#{options[:year_card]}"
 
-      get_response(url)
-      # url
+      answer = get_response(url)
+      answer["Reismogelijkheid"]
     end
 
     def get_stations
-      answer = get_response('/ns-api-stations')
-      p answer["Station"]
+      answer = get_response('/ns-api-stations-v2')
+      answer["Station"]
     end
 
     def get_maintenances(station, actual, unplanned)
