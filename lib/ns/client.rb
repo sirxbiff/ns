@@ -56,7 +56,7 @@ module Ns
       url << "&yearCard=#{options[:year_card]}"
 
       answer = get_response(url)
-      answer["Reismogelijkheid"]
+      answer["ReisMogelijkheid"]
     end
 
     def get_stations
